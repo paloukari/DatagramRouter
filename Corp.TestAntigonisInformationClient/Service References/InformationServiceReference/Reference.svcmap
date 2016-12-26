@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5a9155ca-1691-446e-8dca-36f672941f41" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://devangns03.domain/InformationWcfServer" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InformationWcfServer.xsd" MetadataType="Schema" ID="09a4f093-105d-4ed6-85da-343097519e36" SourceId="1" SourceUrl="http://localhost/InformationWcfServer?xsd=xsd0" />
+    <MetadataFile FileName="InformationWcfServer1.xsd" MetadataType="Schema" ID="edf4da5d-e927-4b26-8633-76de58359498" SourceId="1" SourceUrl="http://localhost/InformationWcfServer?xsd=xsd1" />
+    <MetadataFile FileName="InformationService.wsdl" MetadataType="Wsdl" ID="8573b9ba-8797-4a35-9509-75076be74822" SourceId="1" SourceUrl="http://localhost/InformationWcfServer?wsdl" />
+    <MetadataFile FileName="InformationWcfServer.disco" MetadataType="Disco" ID="9786c76d-c452-4138-a5c4-1f11644f39bf" SourceId="1" SourceUrl="http://localhost/InformationWcfServer?disco" />
+    <MetadataFile FileName="InformationWcfServer2.xsd" MetadataType="Schema" ID="687478cf-7bb4-474d-bcd5-5e6df040fdc4" SourceId="1" SourceUrl="http://localhost/InformationWcfServer?xsd=xsd2" />
+    <MetadataFile FileName="InformationWcfServer3.xsd" MetadataType="Schema" ID="04f4bcb9-c2a4-4070-ae0f-7caab8973951" SourceId="1" SourceUrl="http://localhost/InformationWcfServer?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

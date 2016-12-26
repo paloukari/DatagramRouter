@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AntigonisTypes.ThreePleLayerSecurity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AntigonisTypes.ThreePleLayerSecurity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ThreePleLayerSecurityMessageResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ThreePleLayerSecurityMessageBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ErrorDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThreePleLayerSecurityMessageResponse" nillable="true" type="tns:ThreePleLayerSecurityMessageResponse" />
+  <xs:complexType name="ThreePleLayerSecurityMessageBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MessageBody" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ThreePleLayerSecurityMessageBase" nillable="true" type="tns:ThreePleLayerSecurityMessageBase" />
+  <xs:complexType name="ThreePleLayerSecurityMessageRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ThreePleLayerSecurityMessageBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ThreePleLayerSecurityMessageRequest" nillable="true" type="tns:ThreePleLayerSecurityMessageRequest" />
+</xs:schema>

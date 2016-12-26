@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AntigonisTypes.Information" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AntigonisTypes.Information" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/InformationWcfServer?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AntigonisTypes" />
+  <xs:complexType name="InformationMessageResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:InformationMessageBase">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AntigonisTypes" minOccurs="0" name="ErrorCode" type="q1:HsmError" />
+          <xs:element minOccurs="0" name="ErrorDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsSuccess" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InformationMessageResponse" nillable="true" type="tns:InformationMessageResponse" />
+  <xs:complexType name="InformationMessageBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullMessageText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageBody" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TransactionType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InformationMessageBase" nillable="true" type="tns:InformationMessageBase" />
+  <xs:complexType name="InformationMessageRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:InformationMessageBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InformationMessageRequest" nillable="true" type="tns:InformationMessageRequest" />
+</xs:schema>

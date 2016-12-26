@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e168d4a5-ec14-4e8d-a5a0-866c734387ea" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/ThreePleLayerSecurityWcfServer?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ThreePleLayerSecurityWcfServer.xsd" MetadataType="Schema" ID="037d9a4c-752f-4616-abef-713c46364b63" SourceId="1" SourceUrl="http://localhost/ThreePleLayerSecurityWcfServer?xsd=xsd0" />
+    <MetadataFile FileName="ThreePleLayerSecurityService.wsdl" MetadataType="Wsdl" ID="52441d8d-ebe0-4dc5-ae72-611859d25368" SourceId="1" SourceUrl="http://localhost/ThreePleLayerSecurityWcfServer?wsdl" />
+    <MetadataFile FileName="ThreePleLayerSecurityWcfServer1.xsd" MetadataType="Schema" ID="06ce651b-d7ba-4283-a05e-aac986e8e43a" SourceId="1" SourceUrl="http://localhost/ThreePleLayerSecurityWcfServer?xsd=xsd1" />
+    <MetadataFile FileName="ThreePleLayerSecurityWcfServer2.xsd" MetadataType="Schema" ID="fed01bb6-ebef-4482-aa03-dd703741b64f" SourceId="1" SourceUrl="http://localhost/ThreePleLayerSecurityWcfServer?xsd=xsd2" />
+    <MetadataFile FileName="ThreePleLayerSecurityWcfServer3.xsd" MetadataType="Schema" ID="73733787-176c-44ff-a85a-2b3a4d8c5e36" SourceId="1" SourceUrl="http://localhost/ThreePleLayerSecurityWcfServer?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
